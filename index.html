@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Shop &#8211; H+ Sport</title>
+<link rel="stylesheet" href="css/customizer.css">
+</head>
+<body class="page page-id-255 page-template-default no-featured-image">
+
+<div class="content">
+<div class="post single post-255 page type-page status-publish hentry no-featured-image">
+<!-- /post-header section -->
+<div class="post-content section-inner">
+<section class="main-content">
+<form class="cart" id="cart-hplus">
+<div class="item">
+<div id="vue-root">
+   <div class="customizer">
+       <div v-bind:class="['product-image',sizeClass]">
+           <img src="img/fl.jpg" alt="">
+           <p class="product-image">
+               SelectedSize:{{selectedSize}}
+           </p>
+       </div>
+       <div class="selectors">
+           <div class="field-group">
+            <label for="size-option">Size:</label>
+            <select v-model="selectedSize" name="sizeOptions" id="size-options">
+                <option v-for="size in sizes">
+                    {{size}}
+                </option>
+                
+            </select>
+           </div>
+       </div>
+   </div>
+</div>
+</div>
+</form>
+</section>
+
+</div>
+</div>
+
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/ch02-inventory.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
